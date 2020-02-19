@@ -1,0 +1,149 @@
+@import url(normalize.css);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:600&display=swap");
+
+:root {
+  --violet: hsl(257, 40%, 49%);
+}
+body {
+  padding: 3rem;
+  background: url(../images/bg-mobile.svg) no-repeat;
+  background-color: var(--violet);
+  padding: 2rem;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+header {
+  align-self: flex-start;
+}
+header img {
+  height: 2rem;
+}
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3.25rem;
+  padding: 0.25rem;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 3.5rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  border-radius: 2rem;
+  text-align: center;
+  color: var(--violet);
+  font-size: 0.75rem;
+  padding: 0.75rem 4.5rem;
+}
+img {
+  width: 100%;
+}
+
+/* SOCIAL ICONS */
+
+.social-icons {
+  text-align: center;
+  margin-top: 3.5rem;
+}
+
+.social-icons a {
+  color: white;
+  display: inline-block;
+  margin: 0.175rem;
+  border: 1px solid;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 2;
+  font-size: 0.75rem;
+  border-radius: 50%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (min-width: 675px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+  }
+
+  button {
+    font-size: 1.125rem;
+    padding: 1rem 3.75rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  body {
+    padding: 3.25rem 4.35rem 0;
+    background: var(--violet) url(../images/bg-desktop.svg) no-repeat;
+    background-size: cover;
+  }
+  header {
+    margin: 0rem;
+  }
+
+  header img {
+    height: 3.3rem;
+  }
+  main {
+    flex-direction: row;
+    margin-top: 5rem;
+    align-items: flex-start;
+  }
+  .main-img {
+    align-self: center;
+  }
+
+  .content {
+    width: 41%;
+    text-align: left;
+    margin-left: 3.375rem;
+    margin-top: 2.5rem;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  p {
+    margin-top: 1.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .social-icons {
+    margin-top: 0.5rem;
+    align-self: flex-end;
+  }
+
+  .social-icons a {
+    margin: 0.375rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.2;
+    font-size: 1.125rem;
+  }
+}
