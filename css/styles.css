@@ -113,6 +113,7 @@ img {
     flex-direction: row;
     margin-top: 5rem;
     align-items: flex-start;
+    justify-content: center;
   }
   .main-img {
     align-self: center;
